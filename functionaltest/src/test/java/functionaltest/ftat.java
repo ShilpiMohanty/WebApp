@@ -41,8 +41,7 @@ public class ftat {
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
-
-	@Test(priority = 1)
+@Test(priority = 1)
 	public void viewrepairticket() throws Exception {
 		WebElement welcome = wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//h2[text()='WELCOME TO YOUR ACCOUNT OVERVIEW']")));
